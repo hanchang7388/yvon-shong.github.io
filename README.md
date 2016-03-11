@@ -1,2 +1,2 @@
 # yvon-shong.github.io
-the pages of github.io tp show my projects.
+the pages of github.io to show my projects.
