@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE movies SYSTEM "movies.dtd">
+
+
+
+<movies>
+  <movie>
+    <movie_name>美人鱼</movie_name>
+    <IMDb_id>tt4701660</IMDb_id>
+    <director>周星驰</director>
+    <screenwriter>
+      <writer>周星驰</writer>
+      <writer>李思臻</writer>
+      <writer>何妙祺</writer>
+      <writer>曾瑾昌</writer>
+      <writer>卢正雨</writer>
+      <writer>江玉仪</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">邓超</star>
+      <star sex="male">罗志祥</star>
+      <star sex="female">张雨绮</star>
+      <star sex="female">林允</star>
+      <star sex="female">徐克</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region>
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+      <lang>English</lang>
+      <lang>Janpanese</lang>
+    </language>
+    <release_time>2016-02-08</release_time>
+    <length>93min</length>
+    <score>7.3</score>
+  </movie>
+
+
+
+
+
+  <movie>
+    <movie_name>疯狂的麦克斯4：狂暴之路</movie_name>
+    <IMDb_id>tt1392190</IMDb_id>
+    <director>乔治·米勒</director>
+    <screenwriter>
+      <writer>乔治·米勒</writer>
+      <writer>Brendan McCarthy</writer>
+      <writer>Nick Lathouris</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">汤姆·哈迪</star>
+      <star sex="female">查理兹·塞隆</star>
+      <star sex="male">尼古拉斯·霍尔特</star>
+      <star sex="male">休·基斯-拜恩</star>
+      <star sex="male">乔什·赫尔曼</star>
+    </stars>
+    <producer>
+      <country_region>Australia</country_region>
+      <country_region>USA</country_region>
+    </producer>
+    <language>
+      <lang>English</lang>
+    </language>
+    <release_time>2015-05-15</release_time>
+    <length>120min</length>
+  <score>8.5</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>疯狂动物城</movie_name>
+    <IMDb_id>tt2948356</IMDb_id>
+    <director>拜伦·霍华德</director>
+    <screenwriter>
+      <writer>杰拉德·布什</writer>
+      <writer>菲尔·约翰斯顿</writer>
+    </screenwriter>
+    <stars>
+      <star sex="female">金妮弗·古德温</star>
+      <star sex="male">杰森·贝特曼</star>
+      <star sex="male">伊德里斯·艾尔巴</star>
+      <star sex="female">珍妮·斯蕾特</star>
+      <star sex="male">内特·托伦斯</star>
+    </stars>
+    <producer>
+      <country_region>USA</country_region>
+    </producer>
+    <language>
+      <lang>English</lang>
+    </language>
+    <release_time>2016-03-04</release_time>
+    <length>109min</length>
+    <score>9.4</score>
+  </movie>
+
+<movie>
+  <movie_name>被嫌弃的松子的一生</movie_name>
+  <IMDb_id>tt0768120</IMDb_id>
+  <director>中岛哲也</director>
+    <screenwriter>
+      <writer>中岛哲也</writer>
+      <writer>山田宗树</writer>
+    </screenwriter>
+    <stars>
+      <star sex="female">中谷美纪</star>
+      <star sex="female">瑛太</star>
+      <star sex="male">香川照之</star>
+      <star sex="female">市川实日子</star>
+      <star sex="male">伊势谷友介</star>
+    </stars>
+    <producer>
+      <country_region>Japan</country_region>
+    </producer>
+    <language>
+      <lang>Japanese</lang>
+    </language>
+    <release_time>2006-05-27</release_time>
+    <length>130min</length>
+  <score>8.9</score>
+  </movie>
+
+
+
+
+  <movie>
+  <movie_name>后会无期</movie_name>
+  <IMDb_id>tt3896016</IMDb_id>
+  <director>韩寒</director>
+    <screenwriter>
+      <writer>韩寒</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">冯绍峰</star>
+      <star sex="male">陈柏霖</star>
+      <star sex="male">钟汉良</star>
+      <star sex="female">王珞丹</star>
+      <star sex="male">袁泉</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+      <lang>Cantonese</lang>
+    </language>
+    <release_time>2014-07-24</release_time>
+    <length>104min</length>
+  <score>7.2</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>火星救援</movie_name>
+    <IMDb_id>tt3659388</IMDb_id>
+    <director>雷德利·斯科特</director>
+    <screenwriter>
+      <writer>德鲁·高达</writer>
+      <writer>安迪·威尔</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">马特·达蒙</star>
+      <star sex="female"> 杰西卡·查斯坦</star>
+      <star sex="female"> 克里斯汀·韦格</star>
+      <star sex="male">杰夫·丹尼尔斯</star>
+      <star sex="male">迈克尔·佩纳</star>
+    </stars>
+    <producer>
+      <country_region>America</country_region>
+      <country_region>England</country_region>
+    </producer>
+    <language>
+      <lang>English</lang>
+      <lang>Chinese Mandarin</lang>
+    </language>
+    <release_time>2015-11-25</release_time>
+    <length>144min</length>
+    <score>8.4</score>
+  </movie>
+
+
+
+
+
+    <movie>
+    <movie_name>机械姬</movie_name>
+    <IMDb_id>tt0470752</IMDb_id>
+    <director>亚历克斯·加兰</director>
+    <screenwriter>
+      <writer>亚历克斯·加兰</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">奥斯卡·伊萨克</star>
+      <star sex="male">多姆纳尔·格里森</star>
+      <star sex="female">艾丽西亚·维坎德</star>
+      <star sex="male">克里·约翰逊</star>
+      <star sex="female">黛博拉·罗桑</star>
+    </stars>
+    <producer>
+      <country_region>England</country_region>
+    </producer>
+    <language>
+      <lang>English</lang>
+    </language>
+    <release_time>2015-01-21</release_time>
+    <length>108min</length>
+  <score>7.5</score>
+  </movie>
+
+
+
+
+
+    <movie>
+    <movie_name>心迷宫</movie_name>
+    <IMDb_id>tt4078856</IMDb_id>
+    <director>忻钰坤</director>
+    <screenwriter>
+      <writer>忻钰坤</writer>
+      <writer>冯元良</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">霍卫民</star>
+      <star sex="male">王笑天</star>
+      <star sex="female">罗芸</star>
+      <star sex="female">杨瑜珍</star>
+      <star sex="female">孙黎</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+    </language>
+    <release_time>2015-10-16</release_time>
+    <length>110min</length>
+  <score>8.6</score>
+  </movie>
+
+
+
+
+  <movie>
+    <movie_name>寻龙诀</movie_name>
+    <IMDb_id>tt4276752</IMDb_id>
+    <director>乌尔善</director>
+    <screenwriter>
+      <writer>张家鲁</writer>
+      <writer>张牧野</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">陈坤</star>
+      <star sex="male">黄渤</star>
+      <star sex="female">舒淇</star>
+      <star sex="female">杨颖</star>
+      <star sex="male">夏雨</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region>
+    <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+      <lang>English</lang>
+      <lang>Mongol</lang>
+      <lang>Janpanese</lang>
+    </language>
+    <release_time>2015-12-18</release_time>
+    <length>125min</length>
+  <score>7.7</score>
+  </movie>
+
+
+  <movie>
+    <movie_name>恶棍天使</movie_name>
+    <IMDb_id>tt5297654</IMDb_id>
+    <director>俞白眉</director>
+    <screenwriter>
+      <writer>俞白眉</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">邓超</star>
+      <star sex="female">孙俪</star>
+      <star sex="female">代乐乐</star>
+      <star sex="male">梁超</star>
+      <star sex="male">杨新鸣</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+    </language>
+    <release_time>2015-12-24</release_time>
+    <length>124min</length>
+    <score>4.0</score>
+  </movie>
+
+
+</movies>
