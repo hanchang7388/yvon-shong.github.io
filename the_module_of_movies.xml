@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE movies SYSTEM "movies.dtd">
 
-
-
 <movies>
   <movie>
     <movie_name>美人鱼</movie_name>
@@ -66,7 +64,7 @@
     </language>
     <release_time>2015-05-15</release_time>
     <length>120min</length>
-  <score>8.5</score>
+    <score>8.5</score>
   </movie>
 
 
@@ -97,10 +95,10 @@
     <score>9.4</score>
   </movie>
 
-<movie>
-  <movie_name>被嫌弃的松子的一生</movie_name>
-  <IMDb_id>tt0768120</IMDb_id>
-  <director>中岛哲也</director>
+  <movie>
+    <movie_name>被嫌弃的松子的一生</movie_name>
+    <IMDb_id>tt0768120</IMDb_id>
+    <director>中岛哲也</director>
     <screenwriter>
       <writer>中岛哲也</writer>
       <writer>山田宗树</writer>
@@ -120,16 +118,16 @@
     </language>
     <release_time>2006-05-27</release_time>
     <length>130min</length>
-  <score>8.9</score>
+    <score>8.9</score>
   </movie>
 
 
 
 
   <movie>
-  <movie_name>后会无期</movie_name>
-  <IMDb_id>tt3896016</IMDb_id>
-  <director>韩寒</director>
+    <movie_name>后会无期</movie_name>
+    <IMDb_id>tt3896016</IMDb_id>
+    <director>韩寒</director>
     <screenwriter>
       <writer>韩寒</writer>
     </screenwriter>
@@ -149,7 +147,7 @@
     </language>
     <release_time>2014-07-24</release_time>
     <length>104min</length>
-  <score>7.2</score>
+    <score>7.2</score>
   </movie>
 
 
@@ -186,7 +184,7 @@
 
 
 
-    <movie>
+  <movie>
     <movie_name>机械姬</movie_name>
     <IMDb_id>tt0470752</IMDb_id>
     <director>亚历克斯·加兰</director>
@@ -208,14 +206,14 @@
     </language>
     <release_time>2015-01-21</release_time>
     <length>108min</length>
-  <score>7.5</score>
+    <score>7.5</score>
   </movie>
 
 
 
 
 
-    <movie>
+  <movie>
     <movie_name>心迷宫</movie_name>
     <IMDb_id>tt4078856</IMDb_id>
     <director>忻钰坤</director>
@@ -238,7 +236,7 @@
     </language>
     <release_time>2015-10-16</release_time>
     <length>110min</length>
-  <score>8.6</score>
+    <score>8.6</score>
   </movie>
 
 
@@ -261,7 +259,7 @@
     </stars>
     <producer>
       <country_region>China Mainland</country_region>
-    <country_region>Hong Kong</country_region>
+      <country_region>Hong Kong</country_region>
     </producer>
     <language>
       <lang>Chinese Mandarin</lang>
@@ -271,7 +269,7 @@
     </language>
     <release_time>2015-12-18</release_time>
     <length>125min</length>
-  <score>7.7</score>
+    <score>7.7</score>
   </movie>
 
 
