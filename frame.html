@@ -98,70 +98,23 @@
 
 
 	
-	<section id="fh5co-pricing" data-section="pricing">
-		<div class="fh5co-pricing">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate">All of our projects.</h2>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Please click the one you want to know more. </h3>
-							</div>
-						</div>
-					</div>
-				</div>
+	
+<iframe src="project.html" id="iframepage" frameborder="0" scrolling="no" width=100% marginheight="0" marginwidth="0" onload="iFrameHeight()" ></iframe>
 
-				<div class="row">
-					<div class="pricing">
-						<div class="col-md-3">
-							<div class="price-box to-animate-2 popular">
-								<h2 class="pricing-plan">1</h2>
-								<div class="price"><sup class="currency">#</sup>Frame<small>on Mar 3rd</small></div>
-								<p>The frame of our xml and the design details. </p>
-								<a href="frame.html" class="btn btn-select-plan btn-sm">Know More</a>
-							</div>
-						</div>
+ 
+<script type="text/javascript" language="javascript">   
+    function iFrameHeight() {   
+        var ifm= document.getElementById("iframepage");   
+        var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
+        if(ifm != null && subWeb != null) {
+           ifm.height = subWeb.body.scrollHeight;
+           ifm.width = subWeb.body.scrollWidth;
+        }   
+        
+    }   
+</script>
 
-						<div class="col-md-3">
-							<div class="price-box to-animate-2">
-								<h2 class="pricing-plan">2</h2>
-								<div class="price"><sup class="currency">#</sup>XML<small>on Mar 3rd</small></div>
-								<p>The instance and data of our XML. </p>
-								<a href="xml.html" class="btn btn-select-plan btn-sm">Know More</a>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="price-box to-animate-2">
-								<h2 class="pricing-plan">3</h2>
-								<div class="price"><sup class="currency">#</sup>DTD<small>on Mar 7th</small></div>
-								<p>The Document Type Definition. </p>
-								<a href="dtd.html" class="btn btn-select-plan btn-sm">Know More</a>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="price-box to-animate-2">
-								<h2 class="pricing-plan">4</h2>
-								<div class="price"><sup class="currency">#</sup>XSD<small>on Mar 9th</small></div>
-								<p>The Schema of the xml. </p>
-								<a href="xsd.html" class="btn btn-select-plan btn-sm">Know More</a>
-							</div>
-						</div>
-
-
-					
-
-						<!-- add more cols -->
-
-
-
-
-
-					</div>
-				</div>
-				<div class="fh5co-services">
+	<div class="fh5co-services">
 					<div class="container">
 						<div class="row">
 				
@@ -170,10 +123,6 @@
 						</div>
 					</div>
 					</div>
-
-			</div>
-		</div>
-	</section>
 
 
 	
