@@ -225,18 +225,7 @@
 
 	<section id="fh5co-pricing" data-section="pricing">
 		 
-<iframe src="project.html" id="myiframe" scrolling="no" width=100%  onload="changeFrameHeight()" marginheight="0" marginwidth="0"  frameborder="0"></iframe>
-<script type="text/javascript" language="javascript">  
-	function changeFrameHeight(){
-	    var ifm= document.getElementById("iframepage"); 
-	    ifm.height=document.documentElement.clientHeight;
-	}
-	window.onresize=function(){  
-	     changeFrameHeight();  
-	} 
-</script>
 
-<!--
 
 <iframe src="project.html" id="iframepage" frameborder="0" scrolling="no" width=100% marginheight="0" marginwidth="0" onload="iFrameHeight()" ></iframe>
 
@@ -249,10 +238,13 @@
            ifm.height = subWeb.body.scrollHeight;
            ifm.width = subWeb.body.scrollWidth;
         }   
+        window.onresize=function(){  
+	     iFrameHeight();  
+		} 
     }   
 </script>
 
--->
+
 
 
 </script>
