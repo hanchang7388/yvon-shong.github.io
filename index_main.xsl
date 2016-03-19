@@ -7,6 +7,7 @@
       <h1 align="center">XML course SHOW Pages</h1>
       <h2 align="center">For Group 8 - Sandalphon!</h2>
       <h2 align="center">To write the design of DTD, schema and some codes about XML in the course of XML Technology of SEU.</h2>
+      <img class="img-reponsive" src="images/logo.jpg" alt="Roger Garfield" align="center" />
       <h2>Menber</h2>
 
       <table border="1">
