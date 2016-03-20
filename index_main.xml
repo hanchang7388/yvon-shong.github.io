@@ -7,24 +7,24 @@
 	<introduction>To write the design of DTD, schema and some codes about XML in the course of XML Technology of SEU..</introduction>
 	<member>
 		<person>
-			<name>Zhang leiming</name>
+			<name>Zhang Leiming</name>
 			<stu_number>71113319</stu_number>
 			<duty>Leader</duty>
-			<phone_number>187xxxxxxxx</phone_number>
-			<email>xxxxxxxx@xx.com</email>
+			<phone_number>18795881000</phone_number>
+			<email>522571362@qq.com</email>
 		</person>
 		<person>
-			<name>Song daiwei</name>
+			<name>Song Daiwei</name>
 			<stu_number>71113334</stu_number>
 			<duty>Coder</duty>
-			<phone_number>187xxxxxxxx</phone_number>
+			<phone_number>18795882000</phone_number>
 			<email>yvon-shong@foxmail.com</email>
 		</person>
 		<person>
-			<name>Han chang</name>
+			<name>Han Chang</name>
 			<stu_number>71113317</stu_number>
 			<duty>Coder</duty>
-			<phone_number>18795981168</phone_number>
+			<phone_number>18795883000</phone_number>
 			<email>hanchang_96@163.com</email>
 		</person>		
 	</member>

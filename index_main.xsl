@@ -7,8 +7,11 @@
       <h1 align="center">XML course SHOW Pages</h1>
       <h2 align="center">For Group 8 - Sandalphon!</h2>
       <h2 align="center">To write the design of DTD, schema and some codes about XML in the course of XML Technology of SEU.</h2>
-      <img class="img-reponsive" src="images/logo.jpg" alt="Roger Garfield" align="center" />
+      <div align="center">
+        <img class="img-reponsive" src="images/logo.jpg" alt="Roger Garfield" align="center" />
+      </div>
       <h2>Menber</h2>
+
 
       <table border="1">
        <tr bgcolor="#9acd32">
@@ -18,6 +21,7 @@
          <th>E-mail</th>
        </tr>
        <xsl:for-each select="group/member/person">
+       <xsl:sort select="stu_number" /><!-- >sort by the stu_number<-->
          <tr>
           <td><xsl:value-of select="name"/></td>
           <td><xsl:value-of select="stu_number"/></td>
@@ -26,6 +30,17 @@
         </tr>
       </xsl:for-each>
     </table>
+    
+    
+    <h2>About Us</h2>
+    <p><a href="http://github.com/Yvon-Shong/xml_course">Our Github Repo</a></p>
+    <p><a href="http://yvon-shong.github.io" >Our Page Written by HTML</a></p>
+    
+    
+    
+    
+    
+    
   </body>
 </html>
 </xsl:template>
