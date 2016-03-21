@@ -33,11 +33,17 @@ Mar 9th:
 	
 		movies.xsd --- the schema of the xml.
 		the_module_of_movies.xml --- refresh the referrence definition of the schema.
-
 		the_module_of_movies.xml --- reconstruct the xml, add element:score and add attribute:sex of element:star
+Mar 19th:
 
-
-##Problem:
+        index_main.xml index_main.xsl --- complete the xml file using XSL/XSLT+Xpath
+        xml/xml.css --- in fact, we have complete the css to highlight the xml code long long ago.[HERE](http://yvon-shong.gityhub.io/xml.html)
+        
+## Problem:
 
 		- my xsd and dtd are on the github.com. how can I refer them in xml?
 		- I will transfer this web to https://coding.net/u/yvonshong/p/xml_course/git to check the dtd and schema.
+        - in order to modufy the web of next.html to show our plan to sync this README.md, we will use the Pandoc to try to transfer the markdown file to html file.
+        - iframe is hard to be adaptive and to modularize. and there are some errors of link jumping. nestification and modularization are hard by html.
+		- Git plus OneDrive are convenient for two computer which are used by the only one person.
+		- the editor for web like sublime text, vs code. I find the vs code integrate the Git.
