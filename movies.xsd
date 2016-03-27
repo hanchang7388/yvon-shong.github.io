@@ -77,9 +77,6 @@
 			  				</xs:restriction>
 						</xs:simpleType>
 					</xs:element> 
-
-
-
 			    </xs:sequence>
 	    	</xs:complexType>
 
@@ -87,7 +84,6 @@
 	</xs:choice>
 	</xs:complexType>
 	</xs:element>
-
 <xs:attribute name="sex">
     <xs:simpleType>
       <xs:restriction base="xs:string">
@@ -96,7 +92,4 @@
       </xs:restriction>
     </xs:simpleType>
 </xs:attribute>
-
-
-
 </xs:schema>

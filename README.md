@@ -14,6 +14,15 @@ To write the design of DTD, Schema and some codes about XML in the course of XML
 宋代伟 71113334 (the owner of this repo) 
 
 韩畅 71113317
+
+
+
+
+
+
+
+
+
 ##Update log
 Mar 3rd: 
 
@@ -41,6 +50,11 @@ Mar 19th:
         
 Mar 26th:
         change the website for log and problem and summary, replaced by the html trasnformed from README markdown file. 
+        try to input the xml data by spider from douban.
+        
+Mar 27th:
+        code for the XSL-FO and find the hardness of the NavigatableString in bs4 of spider.
+  
 ## Problem:
 
 		- my xsd and dtd are on the github.com. how can I refer them in xml?
@@ -55,4 +69,5 @@ Mar 26th:
 		- sync
          Git plus OneDrive are convenient for two computer which are used by the only one person.
 		 the editor for web like sublime text, vs code. I find the vs code integrate the Git.
-        
+        - tools
+         the online xml - xsl-fo -pdf transform  http://www.utilities-online.info/foprender/#

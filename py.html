@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Project:Py</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="the Project site of xml course in SEU" />
+	<meta name="keywords" content="xml, dtd, schema, seu" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='http://fonts.useso.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="xml/xml.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	
+
+	<section id="fh5co-explore" data-section="explore">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Spider (Unfinished)</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>The spider powered by Python to auto-input the xml data.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="images/py.jpg">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>we are try to use the python to auto-input the data</h3>
+							<p> but....</p>
+						
+						</div>
+					</div>
+					<div class="fh5co-services">
+						<div class="container">
+							<div class="row">
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div class="fh5co-services">
+			<div class="container">
+				<div class="row">
+					
+					<div class="call-to-action text-center to-animate"><a href="the_module_of_movies.xml" class="btn btn-learn">enter the spider (unfinished) Python file</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="fh5co-explore fh5co-explore-bg-color">
+			<div class="container">
+                
+                 <div class="mt">
+                            <h3>Source code:</h3>
+                
+                
+                <pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444">#!/usr/bin/env python<br># encoding: utf-8<br><br>"""douban_list_spider.py是一个简单的爬虫，可以根据关键字抓取豆瓣电影、豆瓣读书或者豆瓣音乐的条目信息.<br>"""<br><br><br># 把str编码由ascii改为utf8（或gb18030）<br>import sys<br>reload(sys)<br>sys.setdefaultencoding('utf8')<br><br>import time<br>import re<br>import requests<br>import string<br>from bs4 import BeautifulSoup<br><br><br># ==================== 可配置参数 start ====================<br><br>object = 'movie' # 抓取对象<br>tag_list = ['爱情','科幻','惊悚'] # 感兴趣的任意关键字<br>page_num = 1 # 每个标签抓取的页数, 必须为正整数<br><br><br># ==================== 可配置参数 end ====================<br><br><br>file_content = '抓取时间：' + time.asctime() + '\n' # 最终要写到文件里的内容<br>file_partial_name = '_list.txt'<br>string_return = '\n\t'<br><br><br>def print_encode(s):<br>&nbsp;&nbsp;&nbsp; print s<br>&nbsp;&nbsp;&nbsp; # print s.encode("gb18030")<br><br>def movie_spider(soup):<br>&nbsp;&nbsp;&nbsp; global file_content<br>#缺少 IMDb&nbsp;&nbsp;&nbsp;&nbsp; 编剧&nbsp;&nbsp;&nbsp;&nbsp; 上映具体时间&nbsp; 语言&nbsp; 片长<br><br>&nbsp;&nbsp;&nbsp; list_soup = soup.findAll(attrs={"class":"pl"})<br>&nbsp;&nbsp;&nbsp; for douban_info in list_soup:&nbsp; #.find_all('span'):<br>&nbsp;&nbsp;&nbsp; &nbsp;#simplestrs=re.sub('|','\n',douban_info)<br>&nbsp;&nbsp;&nbsp; &nbsp;print douban_info<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ######&nbsp;&nbsp; todo<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><br><br><br><br><br>def each_page_spider(douban_tag, page):<br>&nbsp;&nbsp;&nbsp; global file_content<br>&nbsp;&nbsp;&nbsp; global source_code<br>&nbsp;&nbsp;&nbsp; item_num = page * 15 # 每页有15个条目<br>&nbsp;&nbsp;&nbsp; url = "http://www.douban.com/tag/%s/%s?start=%d" % (douban_tag, object, item_num)<br>&nbsp;&nbsp;&nbsp; item_num += 1<br>&nbsp;&nbsp;&nbsp; #############<br>&nbsp;&nbsp;&nbsp; # 获取网页内容 <br>&nbsp;&nbsp;&nbsp; r = requests.get(url)<br>&nbsp;&nbsp;&nbsp; #print r.text<br>&nbsp;&nbsp;&nbsp; data = r.text <br>&nbsp;&nbsp;&nbsp; # 利用正则查找所有连接 <br>&nbsp;&nbsp;&nbsp; link_list =re.findall(r'<span style="color:#170">&lt;a</span>&nbsp;<span style="color:#00c">href</span>=<span style="color:#a11">"https://movie.douban.com/subject/(.*)/\?from=tag_all"</span>&nbsp;<span style="color:#00c">class</span>=<span style="color:#a11">"title"</span>&nbsp;<span style="color:#00c">target</span>=<span style="color:#a11">"_blank"</span><span style="color:#170">&gt;</span>.*<span style="color:#170">&lt;/a</span><span style="color:#170">&gt;</span>' ,data) <br>&nbsp;&nbsp;&nbsp; #<span style="color:#170">&lt;a</span>&nbsp;<span style="color:#00c">href</span>=<span style="color:#a11">"https://movie.douban.com/subject/19944106/?from=tag"</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#00c">for</span>&nbsp;<span style="color:#00c">plink</span>&nbsp;<span style="color:#00c">in</span>&nbsp;<span style="color:#00c">link_list:</span>&nbsp;<br>&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#00c">eachlink</span>&nbsp;=&nbsp;<span style="color:#a11">"http://movie.douban.com/subject/"</span><span style="color:#00c">+plink</span><br>&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#00c">source_code</span>&nbsp;=&nbsp;<span style="color:#a11">requests.get(eachlink)</span><br>&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#00c">plain_text</span>&nbsp;=&nbsp;<span style="color:#a11">source_code.text</span><br>&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#00c">soup</span>&nbsp;=&nbsp;<span style="color:#a11">BeautifulSoup(source_code.text,</span>&nbsp;<span style="color:#a11">"lxml"</span><span style="color:#@cm-word">)</span><br>&nbsp;&nbsp;&nbsp; &nbsp;<span style="color:#@cm-word">movie_spider(soup)</span><br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">##############</span><br>&nbsp;&nbsp;&nbsp; <br><br><br><br><br><span style="color:#@cm-word">def</span>&nbsp;<span style="color:#@cm-word">douban_spider(douban_tag):</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">global</span>&nbsp;<span style="color:#@cm-word">file_content</span><br><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">title_divide</span>&nbsp;=&nbsp;<span style="color:#a11">'\n'</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'--'</span>&nbsp;<span style="color:#@cm-word">*</span>&nbsp;<span style="color:#@cm-word">30</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'\n'</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'--'</span>&nbsp;<span style="color:#@cm-word">*</span>&nbsp;<span style="color:#@cm-word">30</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'\n'</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">file_content</span>&nbsp;<span style="color:#@cm-word">+</span>=&nbsp;<span style="color:#@cm-word">title_divide</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'\t'</span>&nbsp;<span style="color:#@cm-word">*</span>&nbsp;<span style="color:#@cm-word">4</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#@cm-word">\</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">douban_tag</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#a11">'：'</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#@cm-word">title_divide</span><br><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">for</span>&nbsp;<span style="color:#@cm-word">page</span>&nbsp;<span style="color:#@cm-word">in</span>&nbsp;<span style="color:#@cm-word">range(0,</span>&nbsp;<span style="color:#@cm-word">page_num):</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">each_page_spider(douban_tag,</span>&nbsp;<span style="color:#@cm-word">page)</span><br><br><br><span style="color:#@cm-word">def</span>&nbsp;<span style="color:#@cm-word">do_spider():</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">print_encode(</span><span style="color:#a11">'准备开始抓取...'</span><span style="color:#@cm-word">)</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">for</span>&nbsp;<span style="color:#@cm-word">douban_tag</span>&nbsp;<span style="color:#@cm-word">in</span>&nbsp;<span style="color:#@cm-word">tag_list:</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">douban_spider(douban_tag)</span><br><br><br><span style="color:#@cm-word">def</span>&nbsp;<span style="color:#@cm-word">do_write():</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#a11">""</span><span style="color:#a11">"将最终结果写入文件"</span><span style="color:#a11">""</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">file_name</span>&nbsp;=&nbsp;<span style="color:#@cm-word">object</span>&nbsp;<span style="color:#@cm-word">+</span>&nbsp;<span style="color:#@cm-word">file_partial_name</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">print_encode(</span><span style="color:#a11">'正在将抓取信息写入到文件%s中...'</span>&nbsp;<span style="color:#@cm-word">%</span>&nbsp;<span style="color:#@cm-word">file_name)</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">f</span>&nbsp;=&nbsp;<span style="color:#@cm-word">open(file_name,</span>&nbsp;<span style="color:#a11">'w'</span><span style="color:#@cm-word">)</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">f.write(file_content)</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">f.close()</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">print_encode(</span><span style="color:#a11">'抓取完毕，请到文件%s中查看抓取信息...'</span>&nbsp;<span style="color:#@cm-word">%</span>&nbsp;<span style="color:#@cm-word">file_name)</span><br><br><br><span style="color:#@cm-word">def</span>&nbsp;<span style="color:#@cm-word">main():</span><br><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">if</span>&nbsp;<span style="color:#@cm-word">(type(page_num)</span>&nbsp;<span style="color:#@cm-word">!</span>=&nbsp;<span style="color:#@cm-word">type(1))</span>&nbsp;<span style="color:#@cm-word">or</span>&nbsp;<span style="color:#@cm-word">(page_num</span>&nbsp;<span style="color:#@cm-word">&lt;</span>=&nbsp;<span style="color:#@cm-word">0):</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">print_encode(</span><span style="color:#a11">'抓取页数的取值%s无效! 请为page_num设置一个正整数...'</span>&nbsp;<span style="color:#@cm-word">%</span>&nbsp;<span style="color:#@cm-word">page_num)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">return</span><br><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">do_spider()</span><br>&nbsp;&nbsp;&nbsp; <span style="color:#@cm-word">do_write()</span><br><br><span style="color:#@cm-word">main()</span><br><br></pre>
+       
+       
+             </div>
+			</div>
+        </div>
+</div>
+
+<div class="fh5co-services">
+	<div class="container">
+		<div class="row">
+
+			<div class="call-to-action text-center to-animate"><a href="index.html#project" class="btn btn-learn">back to home page</a>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Stellar Parallax -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Owl Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+<script src="js/google_map.js"></script>
+<!-- Main JS (Do not remove) -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
