@@ -31,7 +31,7 @@
       </xsl:for-each>
     </table>
     
-    <h2>Whose Student Number > 71113320</h2>
+    <h2>If Student Number > 71113320</h2>
      <table border="1">
        <tr bgcolor="#9acd32">
          <th>Name</th>
@@ -76,7 +76,7 @@
     <h2>About Us</h2>
     <p><a href="http://github.com/Yvon-Shong/xml_course">Our Github Repo</a></p>
     <p><a href="http://yvon-shong.github.io" >Our Page Written by HTML</a></p>
-    <p><a href="view-source:http://yvon-shong.github.io/xml/index_main.xsl" >The source code of the xsl</a></p>
+    <p><a href="view-source:http://yvon-shong.github.io/xml/index_main.xsl" >The source code of the xsl (by Chrome)</a></p>
     
     
   </body>

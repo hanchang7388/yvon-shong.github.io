@@ -299,4 +299,291 @@
   </movie>
 
 
+  <movie>
+    <movie_name>霸王别姬</movie_name>
+    <IMDb_id>tt0106332</IMDb_id>
+    <director>陈凯歌</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>芦苇</writer>
+      <writer>李碧华</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">张国荣</star>
+      <star sex="male">张丰毅</star>
+      <star sex="female">巩俐</star>
+      <star sex="male">葛优</star>
+      <star sex="male">英达</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region><!-- 大陆用：China Mainland -->
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>1993-01-01</release_time>
+    <length>171min</length>
+    <score>9.4</score>
+  </movie>
+
+
+  <movie>
+    <movie_name>春光乍泄</movie_name>
+    <IMDb_id>tt0118845</IMDb_id>
+    <director>王家卫</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>王家卫</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">张国荣</star>
+      <star sex="male">张震</star>
+      <star sex="male">梁朝伟</star>
+    </stars>
+    <producer>
+      <country_region>Japan</country_region><!-- 大陆用：China Mainland -->
+      <country_region>Hong Kong</country_region>
+      <country_region>South Korea</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+      <lang>Cantonese</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>1997-05-30</release_time>
+    <length>96min</length>
+    <score>8.7</score>
+  </movie>
+
+
+  <movie>
+    <movie_name>归来</movie_name>
+    <IMDb_id>tt3125472</IMDb_id>
+    <director>张艺谋</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>邹静之</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">陈道明</star>
+      <star sex="male">郭涛</star>
+      <star sex="female">巩俐</star>
+      <star sex="female">张慧雯</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region><!-- 大陆用：China Mainland -->
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>2014-05-16</release_time>
+    <length>111min</length>
+    <score>7.7</score>
+  </movie>
+  
+  
+    <movie>
+    <movie_name>卡罗尔</movie_name>
+    <IMDb_id>tt2402927</IMDb_id>
+    <director>托德·海因斯</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>菲丽丝·奈吉</writer>
+      <writer>派翠西亚·海史密斯</writer>
+    </screenwriter>
+    <stars>
+      <star sex="female">凯特·布兰切特</star>
+      <star sex="female">鲁妮·玛拉</star>
+      <star sex="male">凯尔·钱德勒</star>
+      <star sex="male">杰克·莱西</star>
+    </stars>
+    <producer>
+      <country_region>England</country_region><!-- 大陆用：China Mainland -->
+      <country_region>America</country_region>
+    </producer>
+    <language>
+      <lang>English</lang>
+    </language>
+    <release_time>2015-11-27</release_time>
+    <length>118min</length>
+    <score>8.3</score>
+  </movie>
+
+
+  <movie>
+    <movie_name>亲爱的</movie_name>
+    <IMDb_id>tt3752930</IMDb_id>
+    <director>陈可辛</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>张冀</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">黄渤</star>
+      <star sex="male">佟大为</star>
+      <star sex="female">赵薇</star>
+      <star sex="female">郝蕾</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region><!-- 大陆用：China Mainland -->
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>2014-09-25</release_time>
+    <length>130min</length>
+    <score>8.4</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>师父</movie_name>
+    <IMDb_id>tt4851640</IMDb_id>
+    <director>徐浩峰</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>徐浩峰</writer>
+    </screenwriter>
+    <stars>
+      <star sex="female">宋佳</star>
+      <star sex="female">蒋雯丽</star>
+      <star sex="male">廖凡</star>
+      <star sex="male">金士杰</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region><!-- 大陆用：China Mainland -->
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang>
+    </language>
+    <release_time>2015-12-10</release_time>
+    <length>109min</length>
+    <score>8.1</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>无间道</movie_name>
+    <IMDb_id>tt0338564</IMDb_id>
+    <director>刘伟强 </director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>麦兆辉</writer>
+      <writer>庄文强</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">刘德华</star>
+      <star sex="male">梁朝伟</star>
+      <star sex="female">郑秀文</star>
+      <star sex="male">黄秋生</star>
+      <star sex="male">曾志伟</star>
+    </stars>
+    <producer>
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Cantonese</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>2002-12-12</release_time>
+    <length>101min</length>
+    <score>8.9</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>无间道2</movie_name>
+    <IMDb_id>tt0369060</IMDb_id>
+    <director>刘伟强 </director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>麦兆辉</writer>
+      <writer>庄文强</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">陈冠希</star>
+      <star sex="male">余文乐</star>
+      <star sex="male">吴镇宇</star>
+      <star sex="male">黄秋生</star>
+      <star sex="male">曾志伟</star>
+    </stars>
+    <producer>
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Cantonese</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>2003-10-01</release_time>
+    <length>119min</length>
+    <score>8.1</score>
+  </movie>
+
+
+
+  <movie>
+    <movie_name>无间道2</movie_name>
+    <IMDb_id>tt0369060</IMDb_id>
+    <director>刘伟强 </director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>麦兆辉</writer>
+      <writer>庄文强</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">陈冠希</star>
+      <star sex="male">余文乐</star>
+      <star sex="male">吴镇宇</star>
+      <star sex="male">黄秋生</star>
+      <star sex="male">曾志伟</star>
+    </stars>
+    <producer>
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Cantonese</lang><!-- 普通话用Chinese Mandarin -->
+    </language>
+    <release_time>2003-10-01</release_time>
+    <length>119min</length>
+    <score>8.1</score>
+  </movie>
+  
+  
+  
+    <movie>
+    <movie_name>智取威虎山</movie_name>
+    <IMDb_id>tt3950078</IMDb_id>
+    <director>徐克</director><!-- 只写一个导演 -->
+    <screenwriter>
+      <writer>黄建新</writer>
+      <writer>李杨</writer>
+      <writer>徐克</writer>
+    </screenwriter>
+    <stars>
+      <star sex="male">张涵予</star>
+      <star sex="male">罗志祥</star>
+      <star sex="female">余男</star>
+      <star sex="female">佟丽娅</star>
+      <star sex="male">林更新</star>
+    </stars>
+    <producer>
+      <country_region>China Mainland</country_region><!-- 大陆用：China Mainland -->
+      <country_region>Hong Kong</country_region>
+    </producer>
+    <language>
+      <lang>Chinese Mandarin</lang><!-- 普通话用Chinese Mandarin -->
+      <lang>English</lang>
+    </language>
+    <release_time>2014-12-23</release_time>
+    <length>141min</length>
+    <score>7.7</score>
+  </movie>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </movies>
