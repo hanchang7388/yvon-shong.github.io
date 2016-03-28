@@ -10,7 +10,7 @@
       <div align="center">
         <img class="img-reponsive" src="images/logo.jpg" alt="Roger Garfield" align="center" />
       </div>
-      <h2>Menber</h2>
+      <h2>Member</h2>
 
 
       <table border="1">
