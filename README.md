@@ -55,6 +55,10 @@ Mar 26th:
 Mar 27th:
         code for the XSL-FO and find the hardness of the NavigatableString in bs4 of spider.
   
+
+Mar 28th:
+		github from han chang
+
 ## Problem:
 
 		- my xsd and dtd are on the github.com. how can I refer them in xml?
